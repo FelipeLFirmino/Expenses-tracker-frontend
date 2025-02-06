@@ -1,0 +1,21 @@
+.expense-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.3s;
+}
+
+.expense-list li:last-child {
+  border-bottom: none;
+}
+
+.expense-list li:hover {
+  background: #f9f9f9;
+  border-radius: 8px;
+}

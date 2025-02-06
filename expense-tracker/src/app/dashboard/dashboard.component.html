@@ -1,0 +1,33 @@
+<div class="dashboard">
+    <!-- Main Content Section -->
+    <main class="content">
+      <!-- Header Section -->
+      <header class="dashboard-header">
+        <h1>Your Financial Dashboard</h1>
+      </header>
+  
+      <div class="grid-layout">
+        <!-- Budget Section -->
+        <section class="budget-section">
+          <h2>Monthly Budget</h2>
+          <app-budget-section></app-budget-section>
+        </section>
+  
+        <!-- Expense Overview Chart Section -->
+        <section class="chart-section">
+          <h2>Expense Overview charts</h2>
+          <div class="chart-container">
+            <!-- Placeholder for ChartJS -->
+           <app-expenses-chart></app-expenses-chart>
+          </div>
+        </section>
+  
+        <!-- Top 5 Recent Expenses Section -->
+        <section class="recent-expenses">
+          <h2>Top 5 Recent Expenses</h2>
+          <app-recent-expenses></app-recent-expenses>
+        </section>
+      </div>
+    </main>
+  </div>
+  

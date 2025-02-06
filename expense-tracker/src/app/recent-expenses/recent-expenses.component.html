@@ -1,0 +1,9 @@
+<ul class="expense-list">
+  @for (expense of lastExpenses; track expense.id) {
+  <li>
+    <span> {{ expense.category }}</span>
+    <span>{{ expense.amount | currency}}</span>
+    <span>{{ expense.date | date}} </span>
+  </li>
+  }
+</ul>

@@ -1,0 +1,18 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Modern font */
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

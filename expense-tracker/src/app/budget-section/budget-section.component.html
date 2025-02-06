@@ -1,0 +1,23 @@
+<div class="budget-info">
+  @if (isUserLoading){
+  <h1>User Is loading</h1>
+  }
+  <p>
+    Total Budget: <strong>{{ user.budget | currency }}</strong>
+  </p>
+  <p>
+    Spent: <strong>{{ totalExpenses | currency }}</strong>
+  </p>
+  <p>
+    Remaining: <strong>{{ remainingBudget | currency }}</strong>
+  </p>
+  <div class="progress-bar">
+    <div class="progress" style="width: 75%"></div>
+  </div>
+  <button (click)="onAddExpense()">Add Expense</button>
+  @if(isAddingExpense){
+  <app-expense-entry-form
+    (cancel)="OnCancelAddingExpense()"
+  ></app-expense-entry-form>
+  }
+</div>
